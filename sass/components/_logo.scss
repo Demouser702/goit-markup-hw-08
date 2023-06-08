@@ -1,0 +1,29 @@
+.logo {
+  font-family: var(--logo-font-family);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: var(--letter-spacing-logo);
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.footer .logo:hover,
+.footer .logo:focus {
+  color: var(--button-active-color);
+  transition: color var(--transition);
+}
+.logo--global-header {
+  padding: 24px 0 25px 0;
+}
+.logo--blue {
+  color: var(--logo-blue-color);
+}
+.logo--white {
+  color: var(--dark-section-text-color);
+  &:focus,
+  &:hover {
+    color: var(--logo-blue-color);
+    transition: color var(--transition);
+  }
+}

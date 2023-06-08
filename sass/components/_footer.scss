@@ -1,0 +1,33 @@
+.footer {
+  background: var(--dark-bg-color);
+  color: var(--dark-section-text-color);
+  padding: 60px 0;
+  &__address {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: var(--dark-section-text-color);
+    margin-top: 28px;
+    margin-bottom: 12px;
+  }
+  &__list-item {
+    &:first-child {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.footer--columns {
+  display: flex;
+}
+
+.footer--social {
+  padding-top: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  margin-left: 94px;
+}

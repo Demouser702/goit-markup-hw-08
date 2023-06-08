@@ -1,0 +1,30 @@
+.global-header__nav {
+  display: none;
+}
+.global-header__nav {
+  flex-direction: row;
+  align-items: center;
+}
+.global-header__list {
+  display: flex;
+  padding-left: 93px;
+}
+
+.global-header__list-item {
+  position: relative;
+}
+
+.header-contacts {
+  padding: 32px 0px;
+  display: flex;
+  align-items: center;
+}
+
+/* stiluri pentru tableta*/
+
+@media screen and (min-width: $mobile-breakpoint) {
+}
+.global-header__nav {
+  display: flex;
+  background-color: red;
+}

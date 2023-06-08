@@ -1,0 +1,102 @@
+img {
+  max-width: 100%;
+}
+.icon {
+  display: inline-block;
+}
+.global-header__icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.global-header__icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.form__icon {
+  position: absolute;
+  top: -32px;
+  width: 18px;
+  margin-left: 12px;
+  height: 18px;
+  position: relative;
+}
+.form__icon--checkbox {
+  width: 16px;
+  height: 16px;
+  margin-right: 7px;
+  fill: none;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-skills_icon {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  justify-content: center;
+  background-color: var(--background-alternate);
+  border-radius: 4px;
+}
+.icon-list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.icon-list__item {
+  width: 20px;
+  height: 20px;
+  display: flex;
+}
+
+.icon--social {
+  display: flex;
+  gap: 10px;
+  padding: 12px 12px;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  border-radius: 50%;
+}
+.icon-list .icon--social:hover,
+.icon-list .icon--social:hover {
+  color: var(--dark-section-text-color);
+  background-color: var(--button-active-color);
+  transition: color var(--transition), background-color var(--transition);
+}
+
+.team__list .icon-list .icon--social:hover,
+.team__list .icon-list .icon--social:focus {
+  color: var(--dark-section-text-color);
+  background-color: var(--button-active-color);
+  transition: color var(--transition), background-color var(--transition);
+}
+.icon--close {
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  border: none;
+
+  &:hover,
+  &:focus {
+    stroke: #2196f3;
+    fill: #fff;
+    outline: none;
+    transition: fill var(--transition), stroke var(--transition);
+  }
+}
+.icon--customer {
+  max-width: 86px;
+  max-height: 50px;
+  fill: #afb1b8;
+}

@@ -1,0 +1,90 @@
+.link {
+  text-decoration: none;
+  font-size: 14px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--link-hover-color);
+    transition: color var(--transition);
+  }
+}
+
+.global-header__link--active {
+  color: var(--link-hover-color);
+
+  &::after {
+    position: absolute;
+    display: inline-block;
+    bottom: -33px;
+    left: 0;
+    background: var(--link-hover-color);
+    content: "";
+    width: 42px;
+    height: 4px;
+    border-radius: 2px;
+  }
+}
+
+.global-header__link {
+  color: var(--text-color);
+  font-family: var(--text-font-family);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: var(--letter-spacing-main);
+  margin: 0px 50px 0px 0px;
+  padding: 32px 0px 32px 0px;
+  text-decoration: none;
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--link-hover-color);
+    transition: color var(--transition);
+  }
+}
+.global-header__link--from-contacts {
+  color: var(--link-color);
+  margin: 0px 40px 0px 0px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: var(--letter-spacing-main);
+}
+.link--from-agreement {
+  text-decoration: underline;
+  color: var(--link-hover-color);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  padding-left: 4px;
+}
+.link--from-customer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92px;
+  width: 170px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+    transition: color var(--transition);
+  }
+}
+.link--from-customer .icon--customer:hover,
+.link--from-customer .icon--customer:focus {
+  color: var(--button-active-color);
+  fill: var(--button-active-color);
+  transition: color var(--transition), fill var(--transition);
+}
+
+.link--from-footer {
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.link--from-projects {
+  color: var(--text-color);
+  text-decoration: none;
+}
