@@ -20,6 +20,7 @@ img {
   position: absolute;
   top: -32px;
   width: 18px;
+
   margin-left: 12px;
   height: 18px;
   position: relative;
@@ -35,8 +36,8 @@ img {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.section-skills_icon {
-  width: 270px;
+.section-skills__icon {
+  width: 450px;
   height: 120px;
   margin-bottom: 30px;
   padding-top: 25px;
@@ -46,10 +47,12 @@ img {
   border-radius: 4px;
 }
 .icon-list {
-  margin-top: 20px;
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+.icon-list--from-footer {
+  padding-top: 20px;
 }
 .icon-list__item {
   width: 20px;
@@ -79,6 +82,10 @@ img {
   background-color: var(--button-active-color);
   transition: color var(--transition), background-color var(--transition);
 }
+.team__image {
+  width: 450px;
+  height: 460px;
+}
 .icon--close {
   top: 8px;
   right: 8px;
@@ -99,4 +106,24 @@ img {
   max-width: 86px;
   max-height: 50px;
   fill: #afb1b8;
+}
+@media screen and (min-width: 768px) {
+  .section-skills__icon {
+    width: 354px;
+    max-height: 120px;
+  }
+  .team__image {
+    width: 354px;
+    max-height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-skills__icon {
+    width: 270px;
+  }
+
+  .team__image {
+    width: 270px;
+    height: 260px;
+  }
 }

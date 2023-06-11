@@ -1,8 +1,9 @@
 .container {
-  width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
 }
 
 .container--header {
@@ -13,4 +14,21 @@
 
 .container--hero {
   text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }

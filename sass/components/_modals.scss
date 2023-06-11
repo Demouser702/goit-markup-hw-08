@@ -27,11 +27,20 @@
   position: absolute;
   flex-direction: column;
   align-items: flex-end;
-  min-width: 528px;
-  min-height: 581px;
+  width: 450px;
+  height: 609px;
   background: #ffffff;
   border-radius: 4px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(1);
+}
+
+@media screen and (min-width: 769px) {
+}
+@media screen and (min-width: 1200px) {
+  .modal-content {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }

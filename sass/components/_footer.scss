@@ -2,6 +2,9 @@
   background: var(--dark-bg-color);
   color: var(--dark-section-text-color);
   padding: 60px 0;
+  &__contact-info {
+    text-align: center;
+  }
   &__address {
     font-size: 14px;
     font-style: normal;
@@ -20,14 +23,55 @@
 
 .footer--columns {
   display: flex;
+  flex-direction: column;
 }
 
 .footer--social {
-  padding-top: 15px;
+  padding-top: 60px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  margin-left: 94px;
+  text-align: center;
+}
+
+@media screen and (min-width: 769px) {
+  .footer--columns {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  .footer {
+    &__contact-info {
+      text-align: center;
+    }
+  }
+  .footer--social {
+    padding-top: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    &__contact-info {
+      text-align: left;
+    }
+  }
+  .footer--social {
+    padding-top: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    margin-left: 94px;
+  }
 }

@@ -1,10 +1,6 @@
 .global-header__nav {
   display: none;
 }
-.global-header__nav {
-  flex-direction: row;
-  align-items: center;
-}
 .global-header__list {
   display: flex;
   padding-left: 93px;
@@ -20,11 +16,13 @@
   align-items: center;
 }
 
-/* stiluri pentru tableta*/
-
-@media screen and (min-width: $mobile-breakpoint) {
+@media screen and (min-width: 480px) {
 }
-.global-header__nav {
-  display: flex;
-  background-color: red;
+
+@media screen and (min-width: 769px) {
+  .global-header__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }

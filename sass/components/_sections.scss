@@ -1,6 +1,6 @@
 .section__heading {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
@@ -12,37 +12,34 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero_bg.jpg);
+
   color: var(--dark-section-text-color);
-  padding: 200px 0px;
-  height: 600px;
+  padding: 118px 0px;
   background-position: center;
-  max-width: 1600px;
+  background-size: cover;
   background-repeat: no-repeat;
+  text-align: center;
+  height: 400px;
+  text-align: center;
+  background-color: var(--dark-bg-color);
   margin-left: auto;
   margin-right: auto;
 }
 .section__hero-heading {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   text-align: center;
   letter-spacing: var(--letter-spacing-alternate);
   text-transform: uppercase;
   color: var(--dark-section-text-color);
   margin: 0 auto;
 }
-.section-skills--fromskills {
-  padding: 94px 0;
-}
-.section-skills__list {
-  display: flex;
-}
 .section-skills__item {
-  margin-right: 30px;
-  flex-basis: calc((100% - 75px) / 4);
-  &:last-child {
-    margin-right: 0px;
-  }
+  width: 450px;
+}
+.section-skills--fromskills {
+  padding: 60px 0;
 }
 
 .section-skills__subheading {
@@ -52,16 +49,19 @@
   letter-spacing: var(--letter-spacing-logo);
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 .section-skills__content {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  text-align: left;
 }
 
 .services--fromservices {
   padding-bottom: 94px;
+  display: none;
 }
 .services__list {
   padding-top: 50px;
@@ -94,41 +94,41 @@
 
 .team {
   background: var(--background-alternate);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   &__list {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
   }
   &__item {
-    font-weight: 500;
-    margin-right: 30px;
-    height: 428px;
-    font-size: 16px;
-    line-height: 1.19;
+    height: 622px;
     text-align: center;
-    letter-spacing: 0.03em;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     background: var(--background-main);
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 }
 
 .section--from-customers {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .customers__list {
   display: flex;
-  margin-top: 50px;
+  flex-wrap: wrap;
+  margin-top: 30px;
   gap: 30px;
   justify-content: center;
+  align-items: center;
+}
+.customers__item {
+  width: 210px;
+  height: 92px;
 }
 
 .card-details {
@@ -138,10 +138,11 @@
   &__member {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    margin-bottom: 10px;
   }
   &__title {
     font-weight: 400;
@@ -150,7 +151,6 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--alternate-text-color);
-    margin-top: 10px;
   }
 }
 
@@ -228,5 +228,91 @@
   &:hover .projects__menu-item--overlay {
     display: block;
     transform: translateY(0);
+  }
+}
+@media screen and (min-width: 768px) {
+  .section--hero {
+    max-height: 400px;
+    max-width: 768px;
+  }
+  .section-skills__list {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+  }
+  .section-skills__item {
+    width: 354px;
+    text-align: center;
+  }
+  .section-skills__list {
+    gap: 30px;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  .customers__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .customers__item {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section--hero {
+    text-align: center;
+    height: 600px;
+    max-width: 1600px;
+  }
+  .section__hero-heading {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+  .section__heading {
+    font-size: 36px;
+  }
+  .section-skills--fromskills {
+    padding: 94px 0;
+  }
+  .section-skills__list {
+    flex-wrap: nowrap;
+    text-align: left;
+  }
+  .section-skills__item {
+    width: 270px;
+  }
+  .section-skills__subheading {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: var(--letter-spacing-logo);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  .team {
+    background: var(--background-alternate);
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__list {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+    }
+    &__item {
+      height: 428px;
+    }
+  }
+  .section--from-customers {
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
+  .customers__list {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+  }
+  .customers__item {
+    width: 170px;
   }
 }
