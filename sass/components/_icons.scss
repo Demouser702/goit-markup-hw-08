@@ -4,6 +4,13 @@ img {
 .icon {
   display: inline-block;
 }
+.menu-burger {
+  fill: currentColor;
+}
+.menu-close__icon {
+  fill: currentColor;
+  border-radius: 50%;
+}
 .global-header__icon-envelope {
   width: 16px;
   height: 12px;

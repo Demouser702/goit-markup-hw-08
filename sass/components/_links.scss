@@ -88,12 +88,34 @@
   color: var(--text-color);
   text-decoration: none;
 }
+.mobile-menu__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  text-decoration: none;
+}
 
 @media screen and (min-width: 768px) {
+  .global-header__link {
+    margin: 0;
+  }
+  .global-header__link--from-contacts {
+    margin: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .link--from-agreement {
     line-height: 1.71;
     font-size: 14px;
+  }
+  .global-header__link {
+    margin: 0px 50px 0px 0px;
+  }
+  .global-header__link--from-contacts {
+    margin: 0px 40px 0px 0px;
   }
 }

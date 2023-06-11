@@ -2,7 +2,7 @@
   font-family: var(--logo-font-family);
   font-weight: bold;
   font-size: 24px;
-  line-height: 1.2;
+  line-height: 1.16;
   letter-spacing: var(--letter-spacing-logo);
   text-decoration: none;
   color: var(--text-color);
@@ -30,5 +30,6 @@
 @media screen and (min-width: 769px) {
   .logo {
     font-size: 26px;
+    line-height: 1.2;
   }
 }
